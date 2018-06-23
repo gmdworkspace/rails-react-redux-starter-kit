@@ -26,4 +26,5 @@ tmp
 vendor
 log
 lib
+app/assets/javascripts/bundle.js
 
