@@ -8,6 +8,6 @@ describe('<Welcome />', () => {
   it('should render', () => {
     const component = shallow(<Welcome />);
     expect(component).to.have.length(1);
-  })
+  });
 
 });
