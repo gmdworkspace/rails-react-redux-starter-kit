@@ -13,6 +13,7 @@
     "prestart": "npm run build",
     "start:server": "rails s",
     "start": "run-p build:watch start:server",
+    "test": "npm-run-all lint test:react",
     "test:react": "NODE_ENV=test mocha --compilers js:babel-core/register --require babel-polyfill --require test/client/setup/enzymeSetup.js './test/**/*.spec.{js,jsx}'"
   },
   "devDependencies": {
