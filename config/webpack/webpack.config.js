@@ -3,7 +3,10 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    alias: {
+      client: path.join(__dirname,'../../app', 'client')
+    }
   },
   entry: [
     'babel-polyfill',
